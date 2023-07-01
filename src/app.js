@@ -5,7 +5,8 @@ const staticFilesHandler = require("./middlewares/staticFilesHandler.middleware"
 
 const app = express();
 
-app.use(staticFilesHandler);
+app.use("/projects", staticFilesHandler(["projects"]));
+app.use("/public", staticFilesHandler(["public"]));
 app.use(routes);
 app.use(errorHandler);
 

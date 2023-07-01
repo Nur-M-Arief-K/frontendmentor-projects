@@ -1,0 +1,189 @@
+/* red-hat-display */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* reset */
+@import url("../../public/css/reset/index.css");
+
+:root {
+    /* primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*, *::before, *::after {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.background {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-color: var(--pale-blue);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card {
+    width: 85vw;
+    height: fit-content;
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: 0em 0.6em 1.4em -0.4em var(--dark-blue);
+    overflow: hidden;
+}
+
+.card__illustration {
+    width: 100%;
+    height: auto;
+}
+
+.card__content {
+    padding-inline: 1em;
+    padding-block: 2em;
+}
+
+.card__content__title {
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.card__content__subtitle {
+    padding-block: 1.5em;
+    padding-inline: 2.3em;
+    font-size: 0.8em;
+    text-align: center;
+    color: var(--desaturated-blue);
+}
+
+.card__content__plan-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 0.7em;
+    padding-block: 0.5em;
+    margin-block: 1em;
+    border-radius: 1em;
+    background-color: var(--very-pale-blue);
+    overflow: hidden;
+}
+
+.card__content__plan-info__group-1 {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.card__content__plan-info__group-1__plan-logo {
+    align-self: center;
+}
+
+.card__content__plan-info__group-1__plan-description {
+    align-self: center;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.card__content__plan-info__group-1__plan-description--bold-text {
+    font-weight: bold;
+}
+
+.card__content__plan-info__group-1__plan-description--desaturated-blue-text {
+    color: var(--desaturated-blue);
+}
+
+.card__content__plan-info__group-2 {
+    align-self: center;
+}
+
+.card__content__plan-info__group-2__change-plan {
+    text-decoration: underline;
+    color: var(--bright-blue);
+    font-size: 0.9em;
+}
+
+.card__content__plan-info__group-2__change-plan:hover {
+    cursor: pointer;
+}
+
+.card__button--continue-payment {
+    display: block;
+    border-radius: 0.5em;
+    width: 100%;
+    padding: 1.2em;
+    margin-block: 0.8em;
+    font-size: 0.9em;
+    color: white;
+    background-color: var(--bright-blue);
+    box-shadow: 0em 0.4em 0.6em 0em var(--desaturated-blue);
+    overflow: hidden;
+}
+
+.card__button--cancel-payment {
+    display: block;
+    border-radius: 0.5em;
+    width: 100%;
+    padding: 1.2em;
+    font-size: 0.9em;
+    color: var(--desaturated-blue);
+    overflow: hidden;
+}
+
+.card__button--continue-payment:hover {
+    cursor: pointer;
+}
+
+.card__button--cancel-payment:hover {
+    cursor: pointer;
+}
+
+/* 401px if 1em is 16px */
+@media screen and (min-width: 25.0625em) {
+    .card {
+        width: 75vw;
+    }
+}
+
+/* 601px if 1em is 16px */
+@media screen and (min-width: 37.5625em) {
+    .card {
+        width: 65vw;
+    }
+}
+
+/* 801px if 1em is 16px */
+@media screen and (min-width: 50.0625em) {
+    .card {
+        width: 55vw;
+    }
+}
+
+/* 1001px if 1em is 16px */
+@media screen and (min-width: 62.5625em) {
+    .card {
+        width: 45vw;
+    }
+}
+
+/* 1201px if 1em is 16px */
+@media screen and (min-width: 75.0625em) {
+    .card {
+        width: 25vw;
+    }
+
+    .card__button--continue-payment {
+        padding: 0.7em;
+    }
+
+    .card__button--cancel-payment {
+        padding: 0.7em;
+    }
+}
