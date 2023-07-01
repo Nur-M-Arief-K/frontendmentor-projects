@@ -23,13 +23,13 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### The design
-![desktop design](.\design\active-states.jpg)
-![mobile design](.\design\mobile-design.jpg)
+![desktop design](./design/active-states.jpg)
+![mobile design](./design/mobile-design.jpg)
 
 ### Solution Screenshot
 
-![desktop view](.\solution-screenshot\desktop-solution-screenshot.png)
-![mobile view](.\solution-screenshot\mobile-solution-screenshot.png)
+![desktop view](./solution-screenshot/desktop-solution-screenshot.png)
+![mobile view](./solution-screenshot/mobile-solution-screenshot.png)
 
 ### Links
 
